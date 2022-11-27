@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.certificates{
+  // color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  gap: 50px;
+
+}
+.cert{
+  width: 550px;
+}
+
+.backButton {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+  img {
+    height: 20px;
+    width: auto;
+    margin-bottom: -3px;
+    margin-right: 3px;
+  }
+}
