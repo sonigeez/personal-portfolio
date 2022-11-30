@@ -17,8 +17,15 @@ body {
   gap: 50px;
 
 }
+
 .cert{
-  width: 550px;
+  width: 500px;
+
+    @media screen and (min-width: 300px) and (max-width: 400px) {
+      //css code
+    width: 350px;
+
+  }
 }
 
 .backButton {

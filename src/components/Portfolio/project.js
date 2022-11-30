@@ -12,7 +12,7 @@ export default function Project(props) {
       </div>
       <div className="back">
         <div>
-          <p>{props.data.beschreibung}</p>
+          <p>{props.data.discription}</p>
           {props.data.demo && (
             <a target="_blank" rel="noopener noreferrer" href={props.data.demo}>
               Demo

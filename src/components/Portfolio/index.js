@@ -18,8 +18,7 @@ export default function Portfolio() {
       <Link className="backButton" to="/chat/start/completed">
         <img src={Chat} alt="Chat" /> Go back to chatting.
       </Link>
-      <h1>This is still under construction</h1>
-      {/* <motion.div className="grid" initial="hidden" animate="show">
+      <motion.div className="grid" initial="hidden" animate="show">
         {Projects.map((project) => {
           return (
             <motion.div variants={item}>
@@ -27,7 +26,7 @@ export default function Portfolio() {
             </motion.div>
           );
         })}
-      </motion.div> */}
+      </motion.div>
     </section>
   );
 }

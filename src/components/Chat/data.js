@@ -9,7 +9,7 @@ const data = [
 			{ label: 'Tell me a little about yourself.', link: '/chat/bio' },
 			{ label: 'Show me your projects!', link: '/chat/portfolio' },
 			{ label: 'How can I contact you?', link: '/chat/contact' },
-			{ label: 'Show me your Certificated', link: '/certificates' },
+			{ label: 'Show me your Certificates', link: '/certificates' },
 		],
 	},
 	{
