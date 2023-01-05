@@ -32,5 +32,36 @@ const Project = [
       "A freelance project i build for a client, it's basically a mobile reselling app.",
     demo: "",
   },
+  {
+    name: "Secret chatting application",
+    discription:
+      "A secret chatting application you can share with your friends to send annomnous messages.",
+    demo: "",
+  },
+  {
+    name: "A2Corp",
+    discription:
+      "A FASTag solution for mannaging FASTags.",
+    demo: "",
+  },
+  {
+    name: "Link Shortner",
+    discription:
+      "backend for link shortner.",
+    demo: "",
+  },
+  {
+    name: "Gold Jewellery POS Application",
+    discription:
+      "App Frontend with flutter and backend with firebase",
+    demo: "",
+  },
+  {
+    name: "NodeJS web scrapper",
+    discription:
+      "Implemented with puppeteer.",
+    demo: "",
+  },
+  
 ];
 export default Project;

@@ -19,8 +19,10 @@ function App() {
                 <Route path="/chat/portfolio" element={<Portfolio/>} />
                 <Route path="/chat/:slug/:status" element={<Chat/>} />
                 <Route path="/chat/:slug/" element={<Chat/>} />
+                <Route path="/chat" element={<Chat/>} />
                 <Route path="/certificates" element={<Certifcate/>} />
                 <Route exact path="/" element={<Chat/>} />
+                <Route exact path="*" element={<Chat/>} />
               </Routes>
           </React.Fragment>
       </div>

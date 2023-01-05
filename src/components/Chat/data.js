@@ -17,8 +17,8 @@ const data = [
 		messages: [
 			"My name is Bharat and I'm from Rajasthan, India and I'm 19 years old.",
 			"I've been designing and developing stuff for the web and mobile",
-			'I am working for a small startup and doing freelancing, love exploring and playing with technology',
-		],
+			// 'I am working for a small startup and doing freelancing, love exploring and playing with technology',
+			"I live for the thrill for finding innovative solutions to complex problems. Or at least, that's what I tell myself to keep from going insane.",		],
 		answers: [
 			{ label: 'What technologies are you using?', link: '/chat/tech' },
 			{ label: "Let me see some of your work.", link: '/chat/portfolio' },
@@ -39,8 +39,7 @@ const data = [
 		slug: 'contact',
 		messages: [
 			'You can contact me on Github and LinkedIn, the links are in the left corner of this page.',
-			// 'Or just simply hit me up at magnus@westhofen.me ...',
-		],
+				],
 		answers: [
 			{
 				label: "Okay! Let's start again.",
