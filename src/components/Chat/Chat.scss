@@ -38,7 +38,7 @@
     .Answer {
       @include ease;
       border: 1px solid $color1;
-      border-radius: 10px;
+      border-radius: 26px;
       color: $color1;
       padding: 0.5rem 1rem;
       margin: 0 2rem 0.5rem 0;
@@ -60,5 +60,106 @@
       height: 10px;
       width: auto;
     }
+  }
+}
+
+.animated-box {
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0), 0 4px 16px rgba(0, 0, 0, 0),
+    0 4px 24px rgba(0, 0, 0, 0);
+}
+
+.animated-box.start .lines svg,
+.start .lines svg {
+  animation: stroke 1s linear;
+}
+
+.animated-box .lines,
+.lines {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.animated-box .lines > div,
+.lines > div {
+  position: absolute;
+  inset: 0;
+}
+
+.animated-box .lines > div:last-child,
+.lines > div:last-child {
+  transform: rotate(180deg);
+}
+
+.animated-box .lines > div svg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+  stroke-width: 2;
+  stroke: $color2;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 12;
+  opacity: 0;
+  // transform: rotate(-1deg) translate3d(0, 0, 0);
+}
+
+.lines > div svg {
+  display: block;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+  stroke-width: 2;
+  stroke: #c9e9ff;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 12;
+  opacity: 0;
+  transform: rotate(-1deg) translate3d(0, 0, 0);
+}
+
+.animated-box .lines > div svg:nth-child(1) {
+  stroke: $color2;
+}
+
+.lines > div svg:nth-child(1) {
+  stroke: #f8fcff;
+}
+
+.animated-box .lines > div svg:nth-child(2),
+.lines > div svg:nth-child(2) {
+  stroke-width: 6px;
+  filter: blur(20px);
+}
+
+.animated-box .lines > div svg:nth-child(3),
+.lines > div svg:nth-child(3) {
+  stroke-width: 5px;
+  filter: blur(6px);
+}
+
+.animated-box .lines > div svg:nth-child(4),
+.lines > div svg:nth-child(4) {
+  stroke-width: 10px;
+  filter: blur(56px);
+}
+
+@keyframes stroke {
+  30%,
+  55% {
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+    opacity: 0;
   }
 }
