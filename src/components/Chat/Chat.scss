@@ -44,11 +44,11 @@
       margin: 0 2rem 0.5rem 0;
       float: right;
       text-decoration: none;
-      // &:hover {
-      //   // background: $color1;
-      //   // color: $color2;
-      //   @include ease;
-      // }
+      &:hover {
+        background: $color1;
+        color: $color2;
+        @include ease;
+      }
     }
   }
   .Typing {
