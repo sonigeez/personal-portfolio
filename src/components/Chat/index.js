@@ -7,6 +7,7 @@ import Answer from "./Answer";
 import Typing from "./Typing";
 import { Head } from "../../images";
 import { motion } from "framer-motion";
+import Loader from "../loader";
 
 export default function Chat() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function Chat() {
   const [completed, setCompleted] = useState(false);
 
   useEffect(() => {
-    console.log("Stop checking console xD")
+    console.log("Stop checking console xD");
     setMessages([]);
     setCompleted(false);
     if (status !== "completed") {
@@ -61,7 +62,11 @@ export default function Chat() {
         animate="show"
         className="Window"
       >
-        <img className="Head" src={Head} alt="Head" />
+        <div className="image-container">
+          <Loader />
+          <img className="Head" src={Head} alt="Head" />
+        </div>
+
         <div className="MessageContainer">
           {messages &&
             messages.map((message, idx) => {

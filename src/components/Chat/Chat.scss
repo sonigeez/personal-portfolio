@@ -168,3 +168,18 @@
     opacity: 0;
   }
 }
+
+.image-container{
+  position:relative;
+}
+
+.loader{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width: 15px;
+  height: 15px;
+  margin: 10px 40px;
+  border-radius: 50%;
+  background: black;
+}
