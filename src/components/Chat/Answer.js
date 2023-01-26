@@ -34,15 +34,14 @@ export default function Answer({ data }) {
 
   function onMouseEnterHandle() {
     setIsHover(true);
-    console.log(isHover)
   }
 
   function onMouseLeaveHandle() {
     setIsHover(false);
   }
 
-  function svgAnimation(){
-    const button = buttonRef.current
+  function svgAnimation() {
+    const button = buttonRef.current;
     // const style = getComputedStyle(button);
     const lines = document.createElement("div");
     lines.classList.add("lines");
@@ -64,18 +63,18 @@ export default function Answer({ data }) {
     lines.appendChild(groupBottom);
 
     button.appendChild(lines);
-
   }
 
   useEffect(() => {
-    svgAnimation()
+    svgAnimation();
   }, []);
   return (
     <Link
-    ref={buttonRef}
+      ref={buttonRef}
       onMouseEnter={onMouseEnterHandle}
-      onMouseLeave={onMouseLeaveHandle}
-      className={isHover?"Answer start animated-box":"Answer animated-box"}
+      // onMouseLeave={onMouseLeaveHandle}
+      onAnimationEnd={onMouseLeaveHandle}
+      className={isHover ? "Answer start animated-box" : "Answer animated-box"}
       to={data.link}
     >
       {data.label}

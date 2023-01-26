@@ -44,11 +44,11 @@
       margin: 0 2rem 0.5rem 0;
       float: right;
       text-decoration: none;
-      &:hover {
-        background: $color1;
-        color: $color2;
-        @include ease;
-      }
+      // &:hover {
+      //   // background: $color1;
+      //   // color: $color2;
+      //   @include ease;
+      // }
     }
   }
   .Typing {
@@ -72,6 +72,11 @@
 .animated-box.start .lines svg,
 .start .lines svg {
   animation: stroke 0.8s linear;
+}
+.animated-box.start,
+.start{
+  color: white !important;;
+  background: black;
 }
 
 .animated-box .lines,
@@ -101,7 +106,7 @@
   overflow: visible;
   fill: none;
   stroke-width: 2;
-  stroke: $color2;
+  stroke: #34ebc9;
   width: 100%;
   height: 100%;
   stroke-dasharray: 12 12;
@@ -116,8 +121,8 @@
   inset: 0;
   overflow: visible;
   fill: none;
-  stroke-width: 2;
-  stroke: #c9e9ff;
+  stroke-width: 1;
+  stroke: $color2;
   width: 100%;
   height: 100%;
   stroke-dasharray: 12 12;
