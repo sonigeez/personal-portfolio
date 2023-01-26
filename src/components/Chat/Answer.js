@@ -42,14 +42,13 @@ export default function Answer({ data }) {
   }
 
   function svgAnimation(){
-    console.log("svg")
     const button = buttonRef.current
-    const style = getComputedStyle(button);
+    // const style = getComputedStyle(button);
     const lines = document.createElement("div");
     lines.classList.add("lines");
     const groupTop = document.createElement("div");
     const groupBottom = document.createElement("div");
-    const svg = createSVG(button.offsetWidth, button.offsetHeight, parseInt(style.borderRadius, 20));
+    const svg = createSVG(button.clientWidth, button.clientHeight, 10);
 
     groupTop.appendChild(svg);
     groupTop.appendChild(svg.cloneNode(true));
@@ -69,7 +68,6 @@ export default function Answer({ data }) {
   }
 
   useEffect(() => {
-    console.log("ds")
     svgAnimation()
   }, []);
   return (
@@ -78,7 +76,7 @@ export default function Answer({ data }) {
       onMouseEnter={onMouseEnterHandle}
       onMouseLeave={onMouseLeaveHandle}
       className={isHover?"Answer start animated-box":"Answer animated-box"}
-      to={data.link + isHover}
+      to={data.link}
     >
       {data.label}
     </Link>

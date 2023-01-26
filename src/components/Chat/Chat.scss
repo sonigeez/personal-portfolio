@@ -38,7 +38,7 @@
     .Answer {
       @include ease;
       border: 1px solid $color1;
-      border-radius: 26px;
+      border-radius: 10px;
       color: $color1;
       padding: 0.5rem 1rem;
       margin: 0 2rem 0.5rem 0;
@@ -71,7 +71,7 @@
 
 .animated-box.start .lines svg,
 .start .lines svg {
-  animation: stroke 1s linear;
+  animation: stroke 0.8s linear;
 }
 
 .animated-box .lines,
@@ -123,7 +123,7 @@
   stroke-dasharray: 12 12;
   stroke-dashoffset: 12;
   opacity: 0;
-  transform: rotate(-1deg) translate3d(0, 0, 0);
+  // transform: rotate(-1deg) translate3d(0, 0, 0);
 }
 
 .animated-box .lines > div svg:nth-child(1) {
