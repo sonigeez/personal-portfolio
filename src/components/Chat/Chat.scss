@@ -6,6 +6,7 @@
   .Head {
     height: 130px;
     width: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-bottom: 2rem;
     display: block;
     border: 1px solid #ccc;
@@ -174,6 +175,7 @@
 }
 
 .loader{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   position:absolute;
   bottom:0;
   right:0;
