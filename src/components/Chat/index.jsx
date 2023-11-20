@@ -7,7 +7,6 @@ import Answer from "./Answer";
 import Typing from "./Typing";
 import { Head } from "../../images";
 import { motion } from "framer-motion";
-import Loader from "../loader";
 
 export default function Chat() {
   const navigate = useNavigate();
@@ -63,7 +62,6 @@ export default function Chat() {
         className="Window"
       >
         <div className="image-container">
-          <Loader />
           <img className="Head" src={Head} alt="Head" />
         </div>
 
