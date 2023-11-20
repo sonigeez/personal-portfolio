@@ -9,7 +9,7 @@ export default function Header() {
         <ul>
           <li>
             <a
-              href="https://github.com/bharatchills"
+              href="https://github.com/sonigeez"
               target="_blank"
               rel="noopener noreferrer"
             >

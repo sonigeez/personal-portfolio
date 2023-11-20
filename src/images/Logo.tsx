@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Logo({ color }) {
+//types for props
+interface LogoProps {
+  color?: string;
+}
+
+export default function Logo({ color }: LogoProps) {
   return (
     <svg
       version="1.1"
